@@ -2,8 +2,8 @@ plugins {
     id("java")
     id("application")
 
-    id("org.springframework.boot") version "3.1.4"
-    id("io.spring.dependency-management") version "1.1.0"
+//    id("org.springframework.boot") version "3.1.4"
+//    id("io.spring.dependency-management") version "1.1.0"
 }
 
 group = "com.juho"
@@ -23,8 +23,8 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation("com.google.genai:google-genai:1.0.0")
+    implementation("org.json:json:20231013")
 }
 
 tasks.test {
